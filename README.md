@@ -1,5 +1,8 @@
 # AI Mood Calendar
 
+
+## Summary
+
 AI Mood Calendar is a multimodal Mood Logging and Mental Health Support system that integrates computer vision, speech recognition, structured storage, and agent-based analysis. It detects facial emotions in real time with YOLOv8, converts spoken reflections into text with Google Speech Recognition, and stores entries in a SQLite database with mood ratings, emotions, notes, and timestamps. Users log moods, fetch past entries, and manage records via command-line tools, while an AI agent (Gemini LLM + Google ADK) analyzes mood histories and provides personalized feedback.
 
 The project emerged from iterative design choices. YOLOv8 replaced earlier CNN classifiers after testing showed the need for better real-time accuracy under varying conditions. Google Speech Recognition was chosen over heavier alternatives like Whisper to balance usability and lightweight deployment. SQLite replaced JSON storage to enable structured queries, longitudinal tracking, and scalable analysis. Modular CLI tools were introduced to reduce friction and support experimentation.
